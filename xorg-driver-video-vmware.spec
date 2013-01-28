@@ -1,12 +1,11 @@
 Summary:	X.org video driver for VMware virtual video cards
 Name:		xorg-driver-video-vmware
-Version:	12.0.2
-Release:	3
+Version:	13.0.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-vmware-%{version}.tar.bz2
-# Source0-md5:	0743ec7c479603fba60d118858fd5783
-Patch0:		git_fixes.diff
+# Source0-md5:	b72be57517cbc7a56362f2ee0f092269
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -26,7 +25,6 @@ version of any virtual VMware SVGA adapter.
 
 %prep
 %setup -qn xf86-video-vmware-%{version}
-%patch0 -p1
 
 %build
 %{__libtoolize}
