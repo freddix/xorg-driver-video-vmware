@@ -1,12 +1,13 @@
 Summary:	X.org video driver for VMware virtual video cards
 Name:		xorg-driver-video-vmware
-Version:	13.0.1
-Release:	2
+Version:	13.0.2
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-vmware-%{version}.tar.bz2
-# Source0-md5:	b08e0195ebf3f88a82129322cb93da08
+# Source0-md5:	91d1d7d33181766714405ab013d31244
 URL:		http://xorg.freedesktop.org/
+BuildRequires:	Mesa-libxatracker-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdrm-devel
